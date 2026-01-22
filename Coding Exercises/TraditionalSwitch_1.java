@@ -1,7 +1,5 @@
 /*
-
-
-
+    This program uses a traditiona switch statments to translates a letter into a NATO's keywprd that represents that letter
 */
 class TraditionalSwitch_1 {
     public static void main(String[] args){
