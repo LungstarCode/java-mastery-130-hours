@@ -1,7 +1,9 @@
+import java.util.Scanner;
+
 public class ReadingUserData {
     public static void main(String[] args){
         int currentYear = 2026;
-        getInputFromConsole(currentYear);
+        System.out.println("Your current age is " + getInputFromScanner(currentYear));
 
     }
     public static String getInputFromConsole(int currentYear){
@@ -9,12 +11,14 @@ public class ReadingUserData {
         String year = System.console().readLine("In what year were you born: ");
 
         int age = currentYear - Integer.parseInt(year);
-
-        System.out.println("So you are "+ age + " years old!");
-        return "";
+        return "So you are "+ age + " years old!";
     }
 
     public static String getInputFromScanner(int currentYear){
-        return "";
+        Scanner scan = new Scanner(System.in);
+        System.out.println("In what year were you borth: ");
+        String year = scan.nextLine();
+        int age = currentYear - Integer.parseInt(year);
+        return "So you are "+ age + " years old!";
     }
 }
