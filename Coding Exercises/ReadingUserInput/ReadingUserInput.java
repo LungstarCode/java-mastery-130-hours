@@ -6,7 +6,11 @@ public class ReadingUserData {
     }
     public static String getInputFromConsole(int currentYear){
         String name = System.console().readLine("Hi, what is your name: ");
-        System.out.println("Hello " + name + " thank you for learning java");
+        String year = System.console().readLine("In what year were you born: ");
+
+        int age = currentYear - Integer.parseInt(year);
+
+        System.out.println("So you are "+ age + " years old!");
         return "";
     }
 
