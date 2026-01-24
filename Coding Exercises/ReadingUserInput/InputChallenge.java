@@ -6,4 +6,12 @@ public class InputChallenge {
         tell the user incase of invalid numbers - "Invalid number" through the console
         Prompt the user to enter number #X, x is number 1 through to 5
     """
+
+    public static void main(String[] args ){
+
+    }
+
+    public static void addNumbers(){
+        
+    }
 }
