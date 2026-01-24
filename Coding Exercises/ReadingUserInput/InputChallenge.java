@@ -1,4 +1,5 @@
 // answering the user input challenge 
+import java.util.Scanner;
 public class InputChallenge {
 
     """
@@ -12,6 +13,6 @@ public class InputChallenge {
     }
 
     public static void addNumbers(){
-        
+        Scanner fetch = new Scanner(System.in);
     }
 }
