@@ -14,5 +14,8 @@ public class InputChallenge {
 
     public static void addNumbers(){
         Scanner fetch = new Scanner(System.in);
+
+        System.out.println("Enter number #X");
+        String number = fetch.nextLine();
     }
 }
