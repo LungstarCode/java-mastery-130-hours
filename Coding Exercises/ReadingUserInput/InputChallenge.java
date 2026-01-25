@@ -30,9 +30,10 @@ public class InputChallenge {
             } catch (Exception e){
                 System.out.println("Invalid number!");
             }
-            System.out.println("The sum of the numbers is: "+ sum);
+          
 
         }
+        System.out.println("The sum of the numbers is: "+ sum);
         
         
     }
