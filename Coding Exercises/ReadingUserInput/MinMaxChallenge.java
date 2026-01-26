@@ -18,12 +18,13 @@ public class MinMaxChallenge {
 
             try {
                 uNumber = Integer.parseInt(uInput);
-                if (uNumber < minNumber || uNumber < maxNumber) {
+                if (uNumber > maxNumber ){
+                    maxNumber = uNumber;
+                }
+
+                if (uNumber < maxNumber && (uNumber < maxNumber || uNumber == 0)){
                     minNumber = uNumber;
                 }
-                else if (uNumber > maxNumber){
-                    maxNumber = uNumber;
-                    }
                 }
              catch (Exception invalidInput){
                 System.out.println("Exiting the loop: !!!!!");
