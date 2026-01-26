@@ -35,6 +35,5 @@ public class InputChallenge {
         }
         System.out.println("The sum of the numbers is: "+ sum);
         
-        
     }
 }
