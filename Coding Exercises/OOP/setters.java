@@ -12,7 +12,11 @@ public class Setters {
     }
 
     public setAge(int age){
-        this.age = age;
+        if (age < 0 || age > 125){
+            System.out.println("The age passes is invalid");
+            this.age = -1;
+        } else  this.age = age;
+
     }
 
     public setProgram(String program){
