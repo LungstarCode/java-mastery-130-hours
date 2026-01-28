@@ -15,8 +15,8 @@ class Customer{
         this("Lungile", "lungilemawila5@gmail.com", "1500.45");
     }
 
-    public Customer(String name, String emailAddress){
-        this(name, emailAddress);
+    public Customer(String name, String emailAddress , double creditLimit){
+        this(name, emailAddress , creditLimit = 10000);
     }
 
     // getters 
