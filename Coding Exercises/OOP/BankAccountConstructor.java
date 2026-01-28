@@ -6,7 +6,13 @@ public class BankAccount{
     private static double balance;
     private static String email;
 
-
+    public BankAccount(String name , String account , String cell , String email, double balance){
+        this.name = name;
+        this.accountNumber = account;
+        this.email = email;
+        this.cellNumber = cell;
+        this.balance = balance;
+    }
     public static void main(String[] args ){
 
     }
