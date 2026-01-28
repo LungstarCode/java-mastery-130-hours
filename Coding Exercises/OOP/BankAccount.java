@@ -76,7 +76,7 @@ class BankAccount{
         BankAccount bank = new BankAccount();
         if (acc_balance > amount){
             acc_balance -= amount;
-            System.out.println("Hello "+ bank.getName() + " Your new balance is "+ bank.getBalance());
+            System.out.println("Hello "+ bank.getName() + "Your withdrawla was successful and  Your new balance is "+ bank.getBalance());
         }
         else {
             System.out.println("You have insufient funds for this withdrawal, your balance is R"+ acc_balance);
