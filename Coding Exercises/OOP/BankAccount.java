@@ -60,6 +60,14 @@ class BankAccount{
         }
     }
 
+    public static void withdraw(double amount){
+        if (acc_balance > amount){
+            acc_balance -= amount;
+        }
+        else {
+            System.out.println("You have insufient funds for this withdrawal, your balance is R"+ acc_balance);
+        }
+    }
     
 
 }
