@@ -6,6 +6,18 @@ class BankAccount{
     private static String email;
     private static int phone_number;
 
+    public static void main(String[] args ){
+        BankAccount bank = new BankAccount();
+        bank.setCustomerName = "Lungile Mawila";
+        bank.setAccountNumber = 1245635663;
+        bank.setBalance = 29800.98D;
+        bank.setPhoneNumber = 0712107897;
+        bank.setEmail = "lungilemawila5@gmail.com";
+
+        bank.deposit(10000.00);
+        bank.withdraw(2000);
+    }
+
     public void setAccountNumber(int acc){
         this.acc_number = acc;
     }
@@ -55,6 +67,7 @@ class BankAccount{
     public static void deposit(double amount ){
         if (amount > 0 ){
             acc_balance += amount;
+            System.out.println("Hello "+ bank.getName() + " your new balance is "+ bank.getBalance());
         } else {
             System.out.println("You can not deposit an invalid amount (negative funds)");
         }
