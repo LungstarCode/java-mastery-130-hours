@@ -16,6 +16,7 @@ public class BankAccount{
     public static void main(String[] args ){
         BankAccount lungilesBank = new BankAccount("Lungile", "12343543","0712107897", "lungilemawila5@gmail.com", 1000.00d);
         lungilesBank.deposit(10000);
+        lungilesBank.withdraw(2000);
     }
 
     public static void deposit(double depositAmount){
