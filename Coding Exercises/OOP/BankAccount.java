@@ -49,4 +49,17 @@ class BankAccount{
     public int getPhoneNumber(){
         return this.phone_number;
     }
+
+    // methods 
+
+    public static void deposit(double amount ){
+        if (amount > 0 ){
+            acc_balance += amount;
+        } else {
+            System.out.println("You can not deposit an invalid amount (negative funds)");
+        }
+    }
+
+    
+
 }
