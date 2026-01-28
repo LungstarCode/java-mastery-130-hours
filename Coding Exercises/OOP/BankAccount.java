@@ -27,4 +27,26 @@ class BankAccount{
     public void setEmail(String mail){
         this.email = mail;
     }
+
+    // Getters 
+
+    public int getAccountNumber(){
+        return this.acc_number;
+    }
+
+    public double getBalance(){
+        return this.acc_balance;
+    }
+
+    public String getName(){
+        return this.customer_name;
+    }
+
+    public String getEmail(){
+        return this.email;
+    }
+
+    public int getPhoneNumber(){
+        return this.phone_number;
+    }
 }
