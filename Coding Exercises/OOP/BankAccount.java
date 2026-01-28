@@ -4,15 +4,15 @@ class BankAccount{
     private static double acc_balance;
     private static String customer_name;
     private static String email;
-    private static int phone_number;
+    private static Long phone_number;
 
     public static void main(String[] args ){
         BankAccount bank = new BankAccount();
-        bank.setCustomerName = "Lungile Mawila";
-        bank.setAccountNumber = 1245635663;
-        bank.setBalance = 29800.98D;
-        bank.setPhoneNumber = 0712107897;
-        bank.setEmail = "lungilemawila5@gmail.com";
+        bank.setCustomerName("Lungile Mawila");
+        bank.setAccountNumber(1245635663);
+        bank.setBalance(29800.98D);
+        bank.setEmail("lungilemawila5@gmail.com");
+        bank.setPhoneNumber(0712107L);
 
         bank.deposit(10000.00);
         bank.withdraw(2000);
@@ -30,10 +30,8 @@ class BankAccount{
         this.customer_name = name;
     }
 
-    public void setPhoneNumber(int phone){
-        if (phone.length() != 10){
-            System.out.println("Invalid phone number! ")
-        } else this.phone_number = phone;
+    public void setPhoneNumber(Long phone){
+        this.phone_number = phone;
     }
 
     public void setEmail(String mail){
@@ -58,13 +56,14 @@ class BankAccount{
         return this.email;
     }
 
-    public int getPhoneNumber(){
+    public Long getPhoneNumber(){
         return this.phone_number;
     }
 
     // methods 
 
     public static void deposit(double amount ){
+        BankAccount bank = new BankAccount();
         if (amount > 0 ){
             acc_balance += amount;
             System.out.println("Hello "+ bank.getName() + " your new balance is "+ bank.getBalance());
@@ -74,8 +73,10 @@ class BankAccount{
     }
 
     public static void withdraw(double amount){
+        BankAccount bank = new BankAccount();
         if (acc_balance > amount){
             acc_balance -= amount;
+            System.out.println("Hello "+ bank.getName() + " Your new balance is "+ bank.getBalance());
         }
         else {
             System.out.println("You have insufient funds for this withdrawal, your balance is R"+ acc_balance);
