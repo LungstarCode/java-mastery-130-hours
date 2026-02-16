@@ -15,10 +15,18 @@ class Animals {
         return name;
     }
 
+    public String getSpeed(){
+        return speed;
+    }
+
+    public String getType(){
+        return type;
+    }
+
     public static void main(String[] args){
         Dog dog = new Dog();
 
-        System.out.println("The name of the dog is "+ dog.getName());
+        System.out.println("The name of the dog is "+ dog.getName() + " it is of type "+ dog.getType() + " and it is "+ dog.getSpeed());
     }
 }
 
